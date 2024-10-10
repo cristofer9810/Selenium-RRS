@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div class="page-container">Page of</div>
+    <div class="logo-container"><img style="height: 100px;" src="" />
+    </div>
+    <table class="invoice-info-container">
+        <tbody>
+            <tr>
+                <td class="client-name" rowspan="2">Grupo OET</td>
+                <td>Bogota D.C</td>
+            </tr>
+            <tr>
+                <td>Oficina XXX</td>
+            </tr>
+            <tr>
+                <td>Fecha del informe: <strong>{{today_date}}</strong></td>
+                <td>Cra. XXXXX</td>
+            </tr>
+            <tr>
+                <td>Reporte: <strong>{{dato_usuario}}</strong></td>
+                <td>XXXXXXXS</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="line-items-container">
+        <thead>
+            <tr>
+                <th class="heading-quantity">&nbsp;</th>
+                <th class="heading-description">Descripcion</th>
+                <th class="heading-price">&nbsp;</th>
+                <th class="heading-subtotal">Datos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Estado: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{estado}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>licencia: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{licencia}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>rtm: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{rtm}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>resumen: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{resumen}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>comparendo: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{comparendo}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>multas: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{multas}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>acuerdos: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{acuerdos}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>cedula: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{cedula}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>total: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{total}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>datos_fila: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{datos_fila}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="line-items-container">
+        <thead>
+            <tr>
+                <th class="heading-quantity">&nbsp;</th>
+                <th class="heading-description">Descripcion</th>
+            </tr>
+            <br>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="right">&nbsp;</td>
+                <td class="bold"><p>{{empresas}}</p></td>
+                <hr>
+                <br>
+                <br>
+            </tr>
+            <tr>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{registros}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <div>
+            <img style="height: 100px;  width: 100px;" src="" />
+        </div>
+        <div class="footer-info">XXXXXXX.com | 555 444 6666 | XXXXXXXX.com</div>
+       
+    </div>
+
+</body>
+
+</html>

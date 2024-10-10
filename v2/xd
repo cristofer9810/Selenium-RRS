@@ -1,0 +1,115 @@
+f = @(x) x.^2;    % defina la función a integrar
+a=  0;    % defina los limites de integración
+b=  2;    
+Ia = integral(f,a,b);  %Determina la integral analíticamente, este será su valor de referencia. 
+
+dx= 0.2; %defina el ancho de cada partición. Recuerde que para todos los casos debe trabajar con 10 particiones.
+
+x=a:dx:b;  %establece los valores que asumirá x, desde a (el limite inferior) hasta b(limite superior) variando cada dx.
+
+%escriba el código que le permita determinar la aproximación numérica de la integral:
+y=f(x);
+N=length(x);% define un vector del mismo tamaño que los valores que asume x
+
+M=0;  %valor inicial de la integral por punto medio
+L=0;  %valor inicial de la integral por extremo izquierdo
+R=0;  %valor inicial de la integral por extremo derecho
+
+for i = 1:N-1
+ 
+    M = M + dx * f((x(i) + x(i+1))/2);
+    
+
+    L = L + dx * f(x(i));
+    
+  
+    R = R + dx * f(x(i+1));
+end
+
+%para la aproximación con el extremo izquierdo, llame a la variable de salida L
+%para la aproximación con el extremo derecho, llame a la variable de salida R
+%para la aproximación por punto medio, llame a la variable de salida M
+
+disp('La integral método analítico es:')
+disp(Ia)
+disp('La aproximación de la integral por Extremo izquierdo es:')
+disp(L)
+disp('La aproximación de la integral por Extremo Derecho es:')
+disp(R)
+disp('La aproximación de la integral por punto medio es:')
+disp(M)
+
+errorL=abs((Ia-L)/Ia)*100;
+disp('el error relativo porcentual con el extremo Izquierdo es:')
+disp(errorL)
+
+errorR=abs((Ia-R)/Ia)*100;
+disp('el error relativo porcentual con el extremo Derecho es:')
+disp(errorR)
+
+errorM=abs((Ia-M)/Ia)*100;
+disp('el error relativo porcentual con el Punto Medio es:')
+disp(errorM)
+
+
+
+
+
+
+OTRO: ---------------------------------------------------
+
+
+
+f = @(x) 3*sin(x) + x.^2  ; % defina la función a integrar
+a=  0;    % defina los limites de integración
+b=  12;    
+Ia = integral(f,a,b);  %Determina la integral analíticamente, este será su valor de referencia. 
+
+dx= (b - a) / 10; %defina el ancho de cada partición. Recuerde que para todos los casos debe trabajar con 10 particiones.
+
+x=a:dx:b;  %establece los valores que asumirá x, desde a (el limite inferior) hasta b(limite superior) variando cada dx.
+
+%escriba el código que le permita determinar la aproximación numérica de la integral:
+y=f(x);
+N=length(x);% define un vector del mismo tamaño que los valores que asume x
+
+M=0;  %valor inicial de la integral por punto medio
+L=0;  %valor inicial de la integral por extremo izquierdo
+R=0;  %valor inicial de la integral por extremo derecho
+
+for i = 1:length(x) % escriba el código que le permita determinar la aproximación de la integral por cada uno de los métodos indicados.
+     
+    % rieman medio
+    M = M + dx * f(x(i) + dx/2);
+    
+    % riemman izq
+    L = L + dx * f(x(i));
+    
+    % riemman derecha
+    R = R + dx * f(x(i) + dx);
+end
+
+%para la aproximación con el extremo izquierdo, llame a la variable de salida L
+%para la aproximación con el extremo derecho, llame a la variable de salida R
+%para la aproximación por punto medio, llame a la variable de salida M
+
+disp('La integral método analítico es:')
+disp(Ia)
+disp('La aproximación de la integral por Extremo izquierdo es:')
+disp(L)
+disp('La aproximación de la integral por Extremo Derecho es:')
+disp(R)
+disp('La aproximación de la integral por punto medio es:')
+disp(M)
+
+errorL=abs((Ia-L)/Ia)*100;
+disp('el error relativo porcentual con el extremo Izquierdo es:')
+disp(errorL)
+
+errorR=abs((Ia-R)/Ia)*100;
+disp('el error relativo porcentual con el extremo Derecho es:')
+disp(errorR)
+
+errorM=abs((Ia-M)/Ia)*100;
+disp('el error relativo porcentual con el Punto Medio es:')
+disp(errorM)

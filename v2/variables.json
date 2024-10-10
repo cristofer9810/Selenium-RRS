@@ -1,0 +1,78 @@
+{
+    "empresas":{
+        "rues":{
+        
+            "num_id": null,
+            "ano_renova": null,
+            "fecha_renova": null,
+            "fecha_matri": null,
+            "fecha_vigen" : null,
+            "estado_matri": null,
+            "sociedad": null,
+            "organizacion": null,
+            "catego_matri": null,
+            "fecha_actuali": null
+
+        },
+        "rndc":{
+        
+            "estado_licencia": null,
+            "soat": null,
+            "rtm": null,
+            "fecha_inicial": null,
+            "fecha_final" : null
+        },
+        "SIMIT":{
+        
+            "resumen": null,
+            "comparendos": null,
+            "multas": null,
+            "pago": null,
+            "total" : null,
+            "cursos":[]
+        }
+
+    },
+    
+    "persona":{
+        "rndc":{
+        
+            "estado_licencia": null,
+            "soat": null,
+            "rtm": null,
+            "fecha_inicial": null,
+            "fecha_final" : null
+        },
+        "SIMIT":{
+        
+            "resumen": null,
+            "comparendos": null,
+            "multas": null,
+            "pago": null,
+            "total" : null,
+            "cursos":[]
+        }
+    },
+
+    "placa":{
+        "rndc":{
+        
+            "estado_licencia": null,
+            "soat": null,
+            "rtm": null,
+            "fecha_inicial": null,
+            "fecha_final" : null
+        },
+        "SIMIT":{
+        
+            "resumen": null,
+            "comparendos": null,
+            "multas": null,
+            "pago": null,
+            "total" : null,
+            "cursos":[]
+        }
+    }
+}
+ 
+

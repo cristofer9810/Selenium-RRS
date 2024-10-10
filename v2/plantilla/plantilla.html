@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <table style="border-collapse: collapse; width: 100%;" border="1">
+        <tbody>
+        <tr>
+        <td style="width: 16.0493%;"><img src="" alt="" width="107" height="107" /></td>
+        <td style="width: 69.8217%;">
+        <h1 style="text-align: center;">FORMATO DE REPORTE</h1>
+        </td>
+        <td style="width: 14.1289%;">
+        <div>
+        <div>{{today_date}}</div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <hr />
+        <p>&nbsp;</p>
+        <h1 style="text-align: center;">REGISTRO NACIONAL DE PESPACHO DE CARGA</h1>
+        <table style="border-collapse: collapse; width: 99.4477%; height: 90px;" border="1">
+        <tbody>
+        <tr style="height: 18px;">
+        <td style="width: 11.6741%; height: 18px;">&nbsp;</td>
+        <td style="width: 20.1939%; height: 18px;">ESTADO</td>
+        <td style="width: 24.2758%;">LICENCIA</td>
+        <td style="width: 12.7336%;">RTM</td>
+        </tr>
+        <tr style="height: 18px;">
+        <td style="width: 11.6741%; height: 18px;">RNA</td>
+        <td style="width: 20.1939%; height: 18px;">{{estado}}</td>
+        <td style="width: 24.2758%;">{{licencia}}</td>
+        <td style="width: 12.7336%;">{{rtm}}</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <hr />
+        <p>&nbsp;</p>
+        <h1 style="text-align: center;">SIMIT</h1>
+        <table style="border-collapse: collapse; width: 100%; height: 78px;" border="1">
+        <tbody>
+        <tr style="height: 31px;">
+        <td style="width: 6.48147%; height: 31px;">&nbsp;</td>
+        <td style="width: 14.4205%; height: 31px;">RESUMEN</td>
+        <td style="width: 21.2791%; height: 31px;">COMPARENDO</td>
+        <td style="width: 18.124%; height: 31px;">MULTAS</td>
+        <td style="width: 14.9692%; height: 31px;">ACUERDOS</td>
+        <td style="width: 10.9911%; height: 31px;">CEDULA</td>
+        <td style="width: 7.48457%; height: 31px;">TOTAL</td>
+        </tr>
+        <tr style="height: 47px;">
+        <td style="width: 6.48147%; height: 47px;">SIMIT</td>
+        <td style="width: 14.4205%; height: 47px;">{{resumen}}</td>
+        <td style="width: 21.2791%; height: 47px;">{{comparendo}}</td>
+        <td style="width: 18.124%; height: 47px;">{{multas}}</td>
+        <td style="width: 14.9692%; height: 47px;">{{acuerdos}}</td>
+        <td style="width: 10.9911%; height: 47px;">{{cedula}}</td>
+        <td style="width: 7.48457%; height: 47px;">{{total}}</td>
+        </tr>
+        </tbody>
+        </table>
+        <table style="border-collapse: collapse; width: 99.7257%; height: 128px;" border="1">
+        <tbody>
+        <tr>
+        <td style="width: 100%;">{{datos_fila}}</td>
+        </tr>
+        </tbody>
+        </table>
+    <div class="footer">
+        <div>
+            <img style="height: 100px;  width: 100px;" src="" />
+        </div>
+        <div class="footer-info">XXXXXXX.com | 555 444 6666 | XXXXXX.com</div>
+       
+    </div>
+
+</body>
+
+</html>

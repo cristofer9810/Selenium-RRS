@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div class="page-container">Page of</div>
+    <div class="logo-container"><img style="height: 100px;" src="https://yt3.googleusercontent.com/iHVXw-AD_2vwJ2bpRo7pRZs_2X56qamub-njP2U_OQ0suKMiAaA0b9sZJjvy-NnsfZN0jGXLzQ=s900-c-k-c0x00ffffff-no-rj" />
+    </div>
+    <table class="invoice-info-container">
+        <tbody>
+            <tr>
+                <td class="client-name" rowspan="2">Grupo OET</td>
+                <td>Bogota D.C</td>
+            </tr>
+            <tr>
+                <td>Oficina 101</td>
+            </tr>
+            <tr>
+                <td>Fecha del informe: <strong>{{today_date}}</strong></td>
+                <td>Cra. 13 #76 -12</td>
+            </tr>
+            <tr>
+                <td>Reporte: <strong>{{cabezal}}</strong></td>
+                <td>rpa@grupoet.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="line-items-container">
+        <thead>
+            <tr>
+                <th class="heading-quantity">&nbsp;</th>
+                <th class="heading-description">Descripcion</th>
+                <th class="heading-price">&nbsp;</th>
+                <th class="heading-subtotal">Datos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Ubicacion: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{ubicacion}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Estado: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{estado}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Velocidad: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{velocidad}}KM</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Coordenadas: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{cordenadas}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Longitud: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{longitud}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Latitud: </td>
+                <td class="right">&nbsp;</td>
+                <td class="bold">{{latitud}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <div>
+            <img style="height: 100px;  width: 100px;" src="https://yt3.googleusercontent.com/iHVXw-AD_2vwJ2bpRo7pRZs_2X56qamub-njP2U_OQ0suKMiAaA0b9sZJjvy-NnsfZN0jGXLzQ=s900-c-k-c0x00ffffff-no-rj" />
+        </div>
+        <div class="footer-info">rpa@grupoet.com | 555 444 6666 | rpa@grupoet.com</div>
+       
+    </div>
+
+</body>
+
+</html>
